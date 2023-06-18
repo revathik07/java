@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <input type="radio" name="male" value="vennila">male<br>
+    <input type="radio" name="female" value="blackcurrent">female<br>
+    <button onclick="Store()">select</button>
+
+<script>
+    function Store(){
+    var x=document.getElementsByName("female");
+    var i;
+    for (i=0; i<x.length;i++){
+        if(x[i].type=="radio"){
+            x[i].checked=true;
+        }
+    }
+}
+</script>    
+</body>
+</html>
