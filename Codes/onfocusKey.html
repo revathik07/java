@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>OnFocus Key</h1>
+        <form>
+            <label for="login"> Login Your Email:</label>
+            <input type="text" id="Login_Page" onfocus="keyfocus_name()" onblur="keyblur_name()"/>
+            <br>
+            <br>
+            <label for="PassWord">Enter Your PassWord :</label>
+            <input type="pass" id="Pass_word" onfocus="keyfocus_Input()" onblur="keyblur_Input()"/>
+
+        </form>
+    </center>
+   
+<script>
+    function keyfocus_name(){
+    var input_focusKey = document.getElementById("Login_Page");
+    input_focusKey.style.fontSize="20px";
+    input_focusKey.style.backgroundColor="skyblue";
+    }
+    function keyblur_name(){
+    var input_focusKey = document.getElementById("Login_Page");
+    input_focusKey.style.fontSize="";
+    input_focusKey.style.backgroundColor="";
+    }
+    function keyfocus_Input(){
+    var input_Key = document.getElementById("Pass_word");
+    input_Key.style.fontSize="20px";
+    input_Key.style.backgroundColor="skyblue";
+    }
+    function keyblur_Input(){
+    var input_Key = document.getElementById("Pass_word");
+    input_Key.style.fontSize="";
+    input_Key.style.backgroundColor="";
+    }
+
+</script>    
+    
+</body>
+</html>

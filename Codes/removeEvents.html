@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Events listener</h1>
+    <button id="Btn_Events" onclick="evnt_funct1()">Link</button>
+    <br><br>
+
+     <button onclick=" evnt_funct2()">Add Link</button>
+      <button onclick=" evnt_funct3()"> Remove Link</button>
+</body>
+<script>
+    function evnt_funct1(){
+        alert('Hi! Bot...');
+    }
+    function evnt_funct2(){
+    Btn_Events.addEventListener('click', evnt_funct1);
+    alert('Add Linked...');
+    }
+    function evnt_funct3(){
+    Btn_Events.addEventListener('click', evnt_funct3);
+    alert('remove Linked...');
+    }
+</script>
+</html>

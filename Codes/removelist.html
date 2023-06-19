@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cartoons</h1>
+    <ul id="removeId">
+        <li>Tom & jerry</li>
+        <li>Mr.Bean</li>
+        <li>Chotta Beam</li>
+      </ul>
+    <button onclick="removeItems()">Remove</button>
+
+    <script>
+        function removeItems() {
+            var choco = document.getElementById(removeId);
+
+            if(choco.firstChild) {
+                choco.firstChild.remove();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1 id="Bg_Var"></h1>
+</body>
+<script>
+
+    var Cartoon_Name=["Tom & Jerry","Mr.Bean","Chotta Bheem"];
+    // document.getElementById("Bg_Var").innerHTML=Cartoon_Name;
+
+    Cartoon_Name.push("Poppy");
+    Cartoon_Name.pop();
+
+    Cartoon_Name.unshift("Power Girls");
+    Cartoon_Name.shift();
+
+    document.write(Cartoon_Name);
+
+    document.write("<br>........ <br>");
+
+    Cartoon_Name.splice(0,1);
+
+    document.write(Cartoon_Name);
+
+    document.write("<br> ..........<br>");
+
+    Cartoon_Name.splice(0,2, "ScoobyDoo","Dragon Fury");
+
+    document.write(Cartoon_Name);
+
+    document.write("<br>.......... <br>");
+
+    // Accessing the elements
+
+    document.write(Cartoon_Name[0]);
+
+    document.write("<br>.......... <br>");
+
+    document.write(Cartoon_Name[Cartoon_Name.length-1]);
+
+</script>
+</html>

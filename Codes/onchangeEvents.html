@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnChange Events</title>
+</head>
+<body style="background-image: url(https://a-static.besthdwallpaper.com/tom-and-jerry-wallpaper-1600x900-71416_47.jpg);">
+<center style="color:rgb(230, 28, 95); font-size: larger; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; background-color:white;">
+    <h1>CARTOONS :</h1>
+    <select id="Select_Cartoons" onchange="Show_Cartoons()" style="color:rgb(82, 8, 104);">
+        <option value="">Select Cartoons</option>
+        <option value="Tom & Jerry">Tom & Jerry</option>
+        <option value="Mr.Bean">Mr.Bean</option>
+        <option value="Heidi">Heidi</option>
+        <option value="Scooby Doo">Scooby Doo</option>
+        <option value="PowerPuff Girls">PowerPuff Girls</option>
+        <option value="Jerry Mouse">Jerry Mouse</option>
+    </select>
+</center>
+    <script>
+        function Show_Cartoons(){
+            var SelectCarto=document.getElementById("Select_Cartoons");
+            var SelectCartoonss=SelectCarto.options[SelectCarto.selectedIndex].text;
+
+            if(SelectCartoonss !== "Select Cartoons"){
+                alert("You Choosed :" + SelectCartoonss);
+            }
+        }
+    </script>
+</body>
+</html>
